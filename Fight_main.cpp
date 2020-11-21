@@ -29,20 +29,16 @@ int main(){
     cout << "What Do You Need? ";
     cin >> selekt;
     if(selekt == '1'){
-        string gender;
         cout << "What Gender Is Your Character? ";
-        cin >> gender;
-        if(gender != "Male" && gender != "Female" && gender != "male" && gender != "female")
+        cin >> Player.gender;
+        if(Player.gender != "Male" && Player.gender != "Female" && Player.gender != "male" && Player.gender != "female")
             cout << "Invalid Gender" << endl;
         else{
-            Player.set_gender(gender);
-            string char_name;
-            cout << gender << " character created" << endl;
+            cout << Player.gender << " character created" << endl;
             cout << endl;
             cout << "What Is Your Character's Name? ";
-            cin >> char_name;
-            Player.set_name(char_name);
-            cout << char_name << " given as player name" << endl;
+            cin >> Player.name;
+            cout << Player.name << " given as player name" << endl;
         }
     }
     
