@@ -57,7 +57,7 @@ int main(){
     
     else if(selekt == '3'){
         if(Player.get_name() == "Bot")
-            cout << "Character Hasn't Been Created" << endl;
+            cout << "Character Has Not Been Created" << endl;
         else
             done = true;
     }
