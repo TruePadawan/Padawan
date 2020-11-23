@@ -4,8 +4,9 @@
 #include <string>
 class Fight{
         friend void Player_statt(Fight obj);
-        friend void Char_create(Fight &Player);
+        friend Fight &Char_create(Fight &Player);
         friend std::ostream &operator<<(std::ostream &os, const Fight &obj);
+        friend void Game();
 protected:
     std::string name;
     std::string gender;

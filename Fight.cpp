@@ -47,8 +47,8 @@ Fight &Fight::operator =(const Fight &&rhs){
     return *this;
 }
 
-void Char_create(Fight &Player){
-    int comp{0};
+Fight &Char_create(Fight &Player){
+    int comm{0};
     char selekt;
     do{
     std::cout << "Welcome to Character Creation Menu!" << std::endl;
@@ -86,11 +86,12 @@ void Char_create(Fight &Player){
         if(Player.name == "Bot")
             std::cout << "Character Has Not Been Created" << std::endl;
         else{
-            std::cout << "Your Character Has Been Created Successfully" << std::endl;
-            comp = 1;
+            std::cout << "Character Creation Complete" << std::endl;
+            comm = 1;
+            return Player;
         }
     }
-    }while(comp == 0);
+    }while(comm == 0);
 }
 void Player_statt(Fight obj){
     std::cout << "Name: " << obj.name << std::endl;

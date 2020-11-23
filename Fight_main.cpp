@@ -2,14 +2,10 @@
 #include <string>
 
 #include "Fight.h"
-
+#include "Game.h"
 using namespace std;
 
 int main(){
-    cout << "This is A Game" << endl;
-    cout << "===============" << endl;
-    Fight Player;
-    Char_create(Player);
-    Fight camp{Fight {"Male", "Caesilius"}};
+    Game();
     return 0;
 }
