@@ -21,12 +21,10 @@ Fight::Fight(std::string _gender, std::string _name){
 Fight::Fight(const Fight &source)
      :name{source.name}, gender{source.gender}, xp{source.xp}, level{source.level}, magicka{source.magicka}, damage{source.damage}
      {
-    std::cout << "Copy Constuckt" << std::endl;
 }
 
 //Destrucktor
 Fight::~Fight(){
-    std::cout << "Destroy" << std::endl;
 }
 
 
@@ -34,13 +32,11 @@ Fight::~Fight(){
 Fight::Fight(Fight &&source)
     :name{source.name}, gender{source.gender}, xp{source.xp}, level{source.level}, magicka{source.magicka}, damage{source.damage}
       {
-          std::cout << "Move Constructor called" << std::endl;
 }
 //Copy Assignment
 Fight &Fight::operator=(const Fight &rhs){
     name = rhs.name;
     gender = rhs.gender;
-    std::cout << "OverFlow"<< std::endl;
     return *this;
 }
 
@@ -48,7 +44,6 @@ Fight &Fight::operator=(const Fight &rhs){
 Fight &Fight::operator =(const Fight &&rhs){
     name = rhs.name;
     gender = rhs.gender;
-    std::cout << "Move Assignment" << std::endl;
     return *this;
 }
 
