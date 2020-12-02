@@ -15,30 +15,8 @@ int main(){
     std::cin >> comp;
     if(comp == 1){
         char_create(Player1);
+        
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     else if(comp == 2)
         std::cout << "What A Loser" << std::endl;
     else
