@@ -26,11 +26,6 @@ Player::Player(const Player &source)
      {
 }
 
-//Destrucktor
-
-Player::~Player(){
-}
-
 
 //Move Construcktor
 
