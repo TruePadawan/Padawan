@@ -84,15 +84,15 @@ Player &char_create(Player &charac){
     if(selekt == '1'){
         std::cout << "What Gender Is Your Character? ";
         std::cin >> charac.gender;
-        if(charac.gender != "Male" && charac.gender != "Female" && charac.gender != "male" && charac.gender != "female")
+        while(charac.gender != "Male" && charac.gender != "Female" && charac.gender != "male" && charac.gender != "female"){
             std::cout << "Invalid Gender" << std::endl;
-        else{
-            std::cout << charac.gender << " character created" << std::endl;
-            std::cout << std::endl;
-            std::cout << "What Is Your Character's Name? ";
-            std::cin >> charac.name;
-            std::cout << charac.name << " given as player name" << std::endl;
+            std::cin >> charac.gender;
         }
+        std::cout << charac.gender << " character created" << std::endl;
+        std::cout << std::endl;
+        std::cout << "What Is Your Character's Name? ";
+        std::cin >> charac.name;
+        std::cout << charac.name << " given as player name" << std::endl;
     }
     
     
