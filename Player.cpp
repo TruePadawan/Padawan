@@ -108,7 +108,6 @@ Player &char_create(Player &charac){
         if(charac.name == "Bot")
             std::cout << "Character Has Not Been Created" << std::endl;
         else{
-            std::cout << "Character Creation Complete" << std::endl;
             comm = 1;
         }
     }
