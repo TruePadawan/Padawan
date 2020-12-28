@@ -16,11 +16,17 @@ int main(){
         char_create(Player1);
         cout << "========THE BEGINNING===========\n" << "\n";
         cout << "You wake up and find yourself in a Dark Cave!\n";
+        cin.ignore();
         cout << "You see a Sword and Leather Clothing\n";
+        cin.ignore();
         cout << "You: Where am I?....\n";
+        cin.ignore();
         cout << "You: *pickes up sword and leather clothing*\n";
+        cin.ignore();
         cout << "You: *walks around looking for an exit but comes across two passageways" << endl;
+        cin.ignore();
         cout << "You: Hmmm, Which way do I go? " << endl;
+        cin.ignore();
         cout << "(Press 1 for left passageway or 2 for right passageway)" << endl;
         char first_pick{'0'};
         cin >> first_pick;
