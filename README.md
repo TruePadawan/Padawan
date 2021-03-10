@@ -1,3 +1,12 @@
 # Padawan
 Testing Git
-Ok So I'm Just a Damn 15 year old who is learning c++ and i know lots of developers use this so i'm just messing around with it XD
+
+Just recently started learning C++ Programming and trying to get around how Git works at the moment, this is basically a test run...
+
+
+<**WHAT I'VE LEARNED SO FAR IN C++**>
+* CLASSES
+* STRINGS
+* POLYMORPHISM(BASICS)
+* INHERITANCE(BASICS)
+* OVERLOADING OPERATORS
